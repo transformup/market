@@ -2,6 +2,8 @@
 @import 'global';
 @import 'fonts';
 
+// start header
+
 .header__top {
     background-color: #eef1f3;
 }
@@ -63,7 +65,7 @@
         margin-left: 22px;
     a {
         display: block;
-        font-family: "Quicksand-Medium", sans-serif;
+        font-family: "Quicksand-Medium";
         font-weight: 500;
         color: #333333;
         padding-top: 6px;
@@ -72,7 +74,7 @@
 
 .user__prise {
         display: block;
-        font-family: "Quicksand-Regular", sans-serif;
+        font-family: "Quicksand-Regular";
         font-size: 15px;
         font-weight: 400;
         color: $bg;          
@@ -99,7 +101,7 @@
         }
     }
     a {
-        font-family: "Quicksand-Medium", sans-serif;
+        font-family: "Quicksand-Medium";
         font-size: 15px;
         font-weight: 500;
         color: #333333;
@@ -126,7 +128,7 @@
     border: 1px solid transparent;
     border-radius: 25px;
     border-color: #d9dfe5;
-    font-family: "Quicksand-Regular", sans-serif;
+    font-family: "Quicksand-Regular";
     font-size: 15px;
     font-weight: 400;
     outline: none;
@@ -148,5 +150,71 @@
       top: 18px;
       width: 70px;
       height: 43px;
+      outline: none;
   }     
 } 
+// end header
+
+// start intro
+.intro {
+    background-image: url(../images/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 725px;
+}
+
+.intro__inner {
+    padding: 155px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-self: center;   
+    flex-direction: column;
+}
+.intro__inner-title{
+        padding-bottom: 37px;
+        font-family: "Quicksand-Regular";
+        font-size: 70px;
+        font-weight: 400;
+        text-align: center;
+        color: #f3f3f8;
+
+        span{
+            display: block;
+            font-weight: bold;
+            font-family: "Quicksand-Bold";
+        }
+}
+
+.intro__inner-text{
+        margin-bottom: 67px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #f3f3f3;
+    }
+
+    .intro__inner-transition a {
+        width: 192px;
+        height: 55px;
+        color: #fff;
+        text-align: center;
+        padding-top: 17px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+    }
+
+    .view {
+        margin-right: 13px;
+    }
+
+    .popular {
+        margin-left: 13px;
+    }
+
+    .view:hover,
+    .popular:hover {
+        background-color: #fff;
+        color: #0674ec;
+    }
+
+// end intro
