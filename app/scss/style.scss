@@ -157,10 +157,7 @@
 
 // start intro
 .intro {
-    background-image: url(../images/intro-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom, #2d51d1 0%,#092fba 100%);
     min-height: 725px;
 }
 
@@ -204,17 +201,17 @@
     }
 
     .view {
-        margin-right: 13px;
+        margin-right: 11px;
     }
 
     .popular {
-        margin-left: 13px;
+        margin-left: 11px;
     }
 
     .view:hover,
     .popular:hover {
         background-color: #fff;
-        color: #0674ec;
+        color: $bg;
     }
 
 // end intro
@@ -225,12 +222,15 @@
 .features__inner-search {
     display: flex;
     align-items: center;
-    min-height: 138px;
+    min-height: 135px;
     width: 100%;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
     margin-top: -71px;
     background-color: #fff;
+    position: relative;
+    
+    
 form {
         width: 100%;
         font-size: 0;
@@ -248,7 +248,7 @@ input{
             margin-left: 30px;
             outline: none;
             border: 1px solid #dcdcdc;
-            border-radius: 4px;
+            border-radius: 4px 0 0 4px;
             
         }
     &::placeholder{
@@ -266,7 +266,7 @@ input{
         margin-right: 30px;
         padding: 0 20px;
         border-left: none;
-        border-radius: 4px;
+        border-radius: 0 4px 4px 0;
     }
     button {
         font-size: 16px;
@@ -280,20 +280,46 @@ input{
         cursor: pointer;
     }
 }
+
+.features__inner-search::before {
+    content: '';
+    height: 17px;
+    width: calc(100% - 30px);
+    top: -13px;
+    left: 15px;
+    border-radius: 6px;
+    opacity: .6;
+    background-color: #fff;
+    position: absolute;
+}
+
+.features__inner-search::after {
+    content: '';
+    height: 30px;
+    width: calc(100% - 60px);
+    top: -26px;
+    left: 30px;
+    border-radius: 6px;
+    opacity: .6;
+    background-color: #fff;
+    
+    position: absolute;
+}
 .features__inner {
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
+    
 
    &-items {
       text-align: center;
-    h3 {
+    h2 {
         margin-bottom: 34px;
         font-size: 24px;
         color: #000;
     }
     p {
-        padding: 0 44px 50px;
+        padding: 0 35px 50px;
         line-height: 30px;
     }
  }
@@ -301,6 +327,7 @@ input{
 
 .features__inner-items {
     border-radius: 4px;
+    max-width: 363px;
 }
 
 .features__inner-items:hover {
@@ -334,3 +361,199 @@ input{
     background: url(../images/sell.png) no-repeat;
 }
 // end features
+
+// start product-slider
+.product-slider {
+    background: #eff1f5;
+    padding: 117px 0;
+}
+
+.product-slider__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 0 29px;
+    h4 {
+        font-size: 30px;
+        color: #000;
+    }
+}
+.btn-juliet{
+    border: none;
+    background-color: #7347c1;
+    color: #fff;
+    padding: 10px 25px;
+    outline: transparent;
+    height: 45px;
+    
+}
+#prev {
+    border-radius: 30px 0 0 30px;
+    margin-right: -3px;
+}
+
+#next {
+    border-radius: 0 30px 30px 0;
+    margin-left: -2px;
+}
+
+.product-slider__inner {
+    display: flex !important;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    
+}
+
+.product-slider__item {
+    max-width: 556px;
+    width: 100%;
+    position: relative;
+    &-img {
+        min-height: 451px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
+
+    }
+}
+
+.product-slider__item-choice{  
+        position: absolute;
+        top: calc(50% - 45px);
+        left: calc(50% - 130px);
+        visibility: hidden;
+         a {
+        color: #fff;
+        width: 130px;
+        height: 45px;
+        text-align: center;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        padding-top: 11px;
+    }           
+}
+
+.info {
+        margin-right: 9px;
+}
+
+
+.product-slider__content {
+    max-width: 585px;
+    width: 100%;
+    padding: 50px 60px 0 50px;
+    background-color: #fff;
+    h4{
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+    a{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    &-info{
+        margin-bottom: 30px;
+    }
+    p{
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+}
+
+.username {
+    background-repeat: no-repeat;
+    padding: 0 20px 0 40px;
+    color: #000;
+}
+
+.product {
+    padding-left: 25px;
+    position: relative;
+    color: #7347c1;
+}
+
+.product::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icons/wp_logo.png);
+    left: 0;
+    top: 6px;
+}
+
+.content-btn {
+    display: flex;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ececec;
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 5px;
+        }
+    }
+    a{
+        color: #868c96;
+        font-size: 15px;
+        line-height: 30px;
+        background-color: #f1f3f6;
+        padding: 0 15px 0 17px;
+        border-radius: 15px;
+    }
+    
+}
+
+.content-trade {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    min-height: 70px;
+    
+    span{
+        display: inline-block;
+        font-size: 15px;
+    }
+}
+.trade-wrapper{
+    padding: 20px 0;
+}
+.trade-price {
+    background-color: $bg;
+    font-family: "Quicksand-Medium";
+    font-weight: 500;
+    color: #fff;
+    width: 100px;
+    padding: 6px;
+    border-radius: 25px;
+}
+
+.trade-heart,
+.trade-basket {
+    padding-left: 43px;
+}
+
+// .trade-heart {
+
+// }
+
+.trade-basket {
+    color: $bg;
+
+}
+.product__item-star {
+    padding: 25px 0;
+}
+.jq-ry-container {
+    padding: 0;
+}
+// end product-slider
+
+// start product
+
+// end product
