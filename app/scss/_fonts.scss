@@ -21,3 +21,114 @@
        url("../fonts/Quicksand-Bold.woff") format("woff");
        display: swap;
 }
+
+@font-face {
+	font-family: 'Linearicons-Free';
+	src:url("../fonts/Linearicons-Free.woff2") format("woff2"),
+		  url("../fonts/Linearicons-Free.woff") format("woff");
+		
+}
+
+.lnr-cloud-download:before {
+	content: "\e80b";
+}
+
+.lnr-heart:before {
+	content: "\e813";
+}
+
+.lnr-envelope:before {
+	content: "\e818";
+}
+
+.lnr-inbox:before {
+	content: "\e81a";
+}
+
+.lnr-eye:before {
+	content: "\e81b";
+}
+
+.lnr-license:before {
+	content: "\e822";
+}
+
+.lnr-user:before {
+	content: "\e82a";
+}
+
+.lnr-users:before {
+	content: "\e82b";
+}
+
+.lnr-cart:before {
+	content: "\e82e";
+}
+
+.lnr-phone:before {
+	content: "\e831";
+}
+
+.lnr-map-marker:before {
+	content: "\e833";
+}
+
+.lnr-bubble:before {
+	content: "\e83f";
+}
+
+.lnr-leaf:before {
+	content: "\e849";
+}
+
+.lnr-briefcase:before {
+	content: "\e84c";
+}
+
+.lnr-alarm:before {
+	content: "\e858";
+}
+
+.lnr-clock:before {
+	content: "\e864";
+}
+
+.lnr-magnifier:before {
+	content: "\e86f";
+}
+
+.lnr-chevron-down:before {
+	content: "\e874";
+}
+
+.lnr-chevron-left:before {
+	content: "\e875";
+}
+
+.lnr-chevron-right:before {
+	content: "\e876";
+}
+
+.lnr-arrow-left:before {
+	content: "\e879";
+}
+
+.lnr-arrow-right:before {
+	content: "\e87a";
+}
+
+.lnr-question-circle:before {
+	content: "\e87d";
+}
+
+.lnr-magic-wand:before {
+	content: "\e803";
+}
+
+.lnr-lock:before {
+	content: "\e80f";
+}
+
+.lnr-smile:before {
+	content: "\e854";
+}

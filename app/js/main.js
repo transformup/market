@@ -12,4 +12,12 @@ $(document).ready(function () {
         starWidth: "15px",
         readOnly: true
     });
+
+    $('.follower-slider__inner').slick({
+        appendArrows: $('.arrows-box'),
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+
+    var mixer = mixitup('.products__inner-box');
 });
