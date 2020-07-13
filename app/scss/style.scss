@@ -150,7 +150,13 @@
       top: 18px;
       width: 70px;
       height: 43px;
-      outline: none;
+      cursor: pointer;
+      &::before{
+          content: "\e86f";
+          font-family: 'Linearicons-Free';
+          font-size: 15px;
+          color: #fff;
+      }
   }     
 } 
 // end header
@@ -373,7 +379,6 @@ input{
 }
 
 .btn-juliet{
-    border: none;
     background-color: #7347c1;
     color: #fff;
     padding: 10px 17px;
@@ -764,6 +769,47 @@ input{
 // end products
 
 // start follower-slider
+.arrows-box{
+    position: relative;
+}
+.slick-arrow {
+    background-color: $bg;
+    padding: 10px 23px;
+    outline: transparent;
+    height: 45px;
+    text-indent: -9999px;
+}
+
+.slick-prev {
+    border-radius: 30px 0 0 30px;
+    margin-right: -3px;
+}
+.arrow-left::before{
+        position: absolute;
+        font-family:'Linearicons-Free';
+        font-size: 14px;
+        content: "\e875";
+        color: #fff;
+        top: 14px;
+        left: 15px;
+}
+
+
+.slick-next {
+    border-radius: 0 30px 30px 0;
+    margin-left: -2px;
+}
+
+.arrow-right::before{
+        position: absolute;
+        font-family:'Linearicons-Free';
+        font-size: 14px;
+        content: "\e876";
+        color: #fff;
+        top: 14px;
+        right: 15px;
+}
+
 .follower-slider{
     background-color: #eff1f5;
     padding: 120px 0;
@@ -774,7 +820,75 @@ input{
 }
 
 .follower-slider__inner{
-    display: flex !important;
+    overflow: hidden;
 }
 
 // end follower-slider
+
+// start items
+.items {
+    background-color: #212225;
+    padding: 98px 0;
+}
+
+.items__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &-item {
+        position: relative;
+    }
+}
+.item__img{
+    margin-bottom: 45px;
+}
+
+.lnr-briefcase::before {
+        content: "\e84c";
+        font-family: 'Linearicons-Free';
+        font-size: 48px;
+        color: #feb71d;
+}
+
+.lnr-cloud-download::before {
+        content: "\e80b";
+        font-family: 'Linearicons-Free';
+        font-size: 48px;
+        color: #58c9e9;
+}
+
+.lnr-smile::before {
+        content: "\e854";
+        font-family: 'Linearicons-Free';
+        font-size: 48px;
+        color: #77de51;
+}
+
+.lnr-users::before {
+        content: "\e82b";
+        font-family: 'Linearicons-Free';
+        font-size: 48px;
+        color: #ff6a6d;
+}
+.item__sale{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.case{
+    color: #feb71d;
+}
+.cloud{
+    color: #58c9e9;
+}
+.smile{
+   color: #77de51
+}
+.users{
+    color: #ff6a6d;
+}
+.item-text{
+    font-size: 18px;
+    color: #fff;
+}
+// end items

@@ -16,7 +16,9 @@ $(document).ready(function () {
     $('.follower-slider__inner').slick({
         appendArrows: $('.arrows-box'),
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        
+        
     });
 
     var mixer = mixitup('.products__inner-box');
