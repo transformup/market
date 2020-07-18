@@ -47,6 +47,17 @@ body {
     padding: 0 15px;
 }
 
+.container-fluid {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0 15px;
+    }
+}
 .rate-star {
     display: inline-block;
 }
@@ -67,9 +78,21 @@ body {
     }
 }
 
+.title-min {
+    h5 {
+        font-size: 36px;
+        padding-bottom: 30px;
+        
+        span{
+            color: $bg;
+        }
+    }
+}
+
 button, 
 button:active, 
 button:focus {
     outline: none;
     border: none;
+    cursor: pointer;
 }

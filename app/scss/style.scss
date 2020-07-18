@@ -57,6 +57,9 @@
         height: 50px;
         width: 50px;
         background-color: #7c7979;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         display: block;
         border-radius: 50%;   
 }
@@ -388,6 +391,7 @@ input{
 #prev {
     border-radius: 30px 0 0 30px;
     margin-right: -3px;
+    position: relative;
 }
 
 #next {
@@ -898,20 +902,14 @@ input{
     padding: 120px 0 90px;
 }
 
-.quality__inner-title {
+.quality__title {
     display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 675px;
     margin: 0 auto 59px;
-
-    h5 {
-        font-size: 36px;
-        padding-bottom: 30px;
+    h5{
         color: #000;
-        span{
-            color: $bg;
-        }
     }
     .title-text{
         line-height: 30px;
@@ -937,8 +935,7 @@ input{
             color: #dee7fe;
             text-align: start;
             display: block;
-        }
-       
+        }  
     }
 }
 .lnr-license,
@@ -986,7 +983,80 @@ input{
 .themes-text{
     font-size: 16px;
     line-height: 30px;
-    
-
 }
 // end quality
+
+// start shopping
+.shopping {
+    background-image: url(../images/two-ground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 561px;
+    padding: 85px 0;
+}
+
+.shopping__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping__item{
+    max-width: 579px;
+    text-align: center;
+    &-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 49px;
+    }
+    &-title{
+        color: #fff;
+    }
+    &-text{
+        color: #fff;
+        line-height: 30px;
+        padding-bottom: 49px;
+    }
+    button{
+        
+        border-radius: 30px;
+    }
+    .sellpro{
+        color: $bg;
+        padding: 21px 26px;
+    }
+    .buypro{
+        color: $violet;
+        padding: 21px 41px;
+    }
+}
+
+.icosvg-1{
+    width: 120px;
+}
+
+.icosvg-2{
+    width: 100px;
+}
+// end shopping
+
+// start feedback
+.feedback{
+    padding: 120px 0;
+}
+
+.feedback__title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 675px;
+    margin: 0 auto 59px;
+    h5{
+        color: #000;
+    }
+    .title-text{
+        line-height: 30px;
+        text-align: center;
+    }
+}
+// end feedback
