@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "Quicksand-Light";
+
+  src: url("../fonts/Quicksand-Light.woff2") format("woff2"), 
+	   url("../fonts/Quicksand-Light.woff") format("woff");
+	display: swap;
+}
+
+@font-face {
   font-family: "Quicksand-Regular";
 
   src: url("../fonts/Quicksand-Regular.woff2") format("woff2"),
@@ -131,4 +139,8 @@
 
 .lnr-smile:before {
 	content: "\e854";
+}
+
+.lnr-chart-bars:before {
+	content: "\e843";
 }

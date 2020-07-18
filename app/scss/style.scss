@@ -379,7 +379,7 @@ input{
 }
 
 .btn-juliet{
-    background-color: #7347c1;
+    background-color: #7347c1 !important;
     color: #fff;
     padding: 10px 17px;
     outline: transparent;
@@ -876,19 +876,117 @@ input{
 }
 
 .case{
-    color: #feb71d;
+    color: $orange;
 }
 .cloud{
-    color: #58c9e9;
+    color: $blue;
 }
 .smile{
-   color: #77de51
+   color: $green;
 }
 .users{
-    color: #ff6a6d;
+    color: $red;
 }
 .item-text{
     font-size: 18px;
     color: #fff;
 }
 // end items
+
+// start quality
+.quality {
+    padding: 120px 0 90px;
+}
+
+.quality__inner-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 675px;
+    margin: 0 auto 59px;
+
+    h5 {
+        font-size: 36px;
+        padding-bottom: 30px;
+        color: #000;
+        span{
+            color: $bg;
+        }
+    }
+    .title-text{
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+.quality__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-themes{
+        max-width: 362px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 20px 35px 60px;
+        position: relative;
+        span{
+            font-family: "Quicksand-Light";
+            font-weight: 300;
+            font-size: 48px;
+            color: #dee7fe;
+            text-align: start;
+            display: block;
+        }
+       
+    }
+}
+.lnr-license,
+.lnr-magic-wand,
+.lnr-lock,
+.lnr-chart-bars,
+.lnr-leaf,
+.lnr-phone{
+    margin-bottom: 48px;
+    font-family: 'Linearicons-Free';
+    font-size: 60px;
+}
+
+.lnr-license{ 
+    color: $bg;
+}
+
+.lnr-magic-wand{
+    color: $violet;
+}
+
+.lnr-lock{
+    color: $green;
+}
+
+.lnr-chart-bars{
+    color: $orange;
+}
+
+.lnr-leaf{
+    color: $blue;
+}
+
+.lnr-phone{
+    color: $red;
+}
+
+.themes-title{
+    font-family: "Quicksand-Regular";
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.themes-text{
+    font-size: 16px;
+    line-height: 30px;
+    
+
+}
+// end quality
