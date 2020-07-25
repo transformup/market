@@ -3,8 +3,8 @@ $(document).ready(function () {
         autoplay: false,
         arrows: true,
         appendArrows: $('.arrows-wrap'),
-        prevArrow: '<button id="prev" type="button" class="btn btn-juliet"></button>',
-        nextArrow: '<button id="next" type="button" class="btn btn-juliet"></button>'
+        prevArrow: '<button type="button" class="product-btn juliet-prev"></button>',
+        nextArrow: '<button type="button" class="product-btn juliet-next"></button>'
     });
 
     $(".rate-star").rateYo({
@@ -15,10 +15,17 @@ $(document).ready(function () {
 
     $('.follower-slider__inner').slick({
         appendArrows: $('.arrows-box'),
+        nextArrow: '<button type="button" class="follower-btn follower-next"></button>',
+        prevArrow: '<button type="button" class="follower-btn follower-prev"></button>',
         slidesToShow: 3,
-        slidesToScroll: 3,
-        
-        
+        slidesToScroll: 3,  
+    });
+
+    $('.feedback-slider__inner').slick({
+        nextArrow: '<button type="button" class="slick-btn feedback-next"></button>',
+        prevArrow: '<button type="button" class="slick-btn feedback-prev"></button>',
+        slidesToShow: 2,
+        slidesToScroll: 1
     });
 
     var mixer = mixitup('.products__inner-box');
